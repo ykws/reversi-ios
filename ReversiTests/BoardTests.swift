@@ -20,12 +20,23 @@ class BoardTests: XCTestCase {
     }
 
     func testInitializedBoard() {
+        let initializedBoard: [Cell] = [
+            .blank, .blank, .blank, .blank, .blank, .blank, .blank, .blank,
+            .blank, .blank, .blank, .blank, .blank, .blank, .blank, .blank,
+            .blank, .blank, .blank, .blank, .blank, .blank, .blank, .blank,
+            .blank, .blank, .blank, .light, .dark,  .blank, .blank, .blank,
+            .blank, .blank, .blank, .dark,  .light, .blank, .blank, .blank,
+            .blank, .blank, .blank, .blank, .blank, .blank, .blank, .blank,
+            .blank, .blank, .blank, .blank, .blank, .blank, .blank, .blank,
+            .blank, .blank, .blank, .blank, .blank, .blank, .blank, .blank,
+        ]
         var board = Board()
         board.initialize()
-        XCTAssertEqual(board.get(AtRow: 3, AtColumn: 3), .light)
-        XCTAssertEqual(board.get(AtRow: 4, AtColumn: 3), .light)
-        XCTAssertEqual(board.get(AtRow: 3, AtColumn: 4), .light)
-        XCTAssertEqual(board.get(AtRow: 4, AtColumn: 4), .light)
+        for row in 0...7 {
+            for column in 0...7 {
+                XCTAssertEqual(board.get(AtRow: row, AtColumn: column), initializedBoard[row + column * 8])
+            }
+        }
     }
 
     func testPerformanceExample() {

@@ -10,7 +10,6 @@
 		08E815BD245D49AF00D33479 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E815BC245D49AF00D33479 /* Board.swift */; };
 		08E815BE245D49AF00D33479 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E815BC245D49AF00D33479 /* Board.swift */; };
 		08E815C0245D49D800D33479 /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E815BF245D49D800D33479 /* BoardTests.swift */; };
-		08E815C1245D90A300D33479 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D642BDD723AA0B5700396732 /* Disk.swift */; };
 		08E815C3245D94E900D33479 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E815C2245D94E900D33479 /* Cell.swift */; };
 		08E815C4245D94E900D33479 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E815C2245D94E900D33479 /* Cell.swift */; };
 		D636B39F23D35043007F370F /* DiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636B39E23D35043007F370F /* DiskView.swift */; };
@@ -264,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08E815C1245D90A300D33479 /* Disk.swift in Sources */,
 				08E815BE245D49AF00D33479 /* Board.swift in Sources */,
 				08E815C4245D94E900D33479 /* Cell.swift in Sources */,
 				D642BDCB23A9FE4700396732 /* ReversiTests.swift in Sources */,
